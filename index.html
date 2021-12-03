@@ -21,7 +21,7 @@
         const animation = document.getElementById('animation')
         const height = document.getElementById('crutch')
         const breakpoints = []
-        const breakpointsLength = 10
+        const breakpointsLength = 20
 
         let count = 0
 
@@ -60,7 +60,7 @@
             for(let i = 0; i < breakpointsLength; i++)
                 breakpoints.push((i + 1) * animation.duration / breakpointsLength)
             // Даём странице полвысоты экрана пользователя на каждый брейкпоинт
-            height.style.height = 50 * breakpointsLength + "vh"
+            height.style.height = 20 * breakpointsLength + "vh"
             // Регулируем событие изменения масштаба
             window.addEventListener('resize', function() {
                 animation.height = window.innerHeight
